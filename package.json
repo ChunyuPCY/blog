@@ -1,17 +1,48 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "bun@1.2.5",
+  "description": "Personal Blog",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "vue-tsc --noEmit",
+    "commitlint": "commitlint --edit",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "nuxt": "^3.16.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.10.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/types": "^19.8.0",
+    "@nuxt/eslint": "^1.2.0",
+    "@unocss/eslint-plugin": "^66.1.0-beta.6",
+    "@unocss/nuxt": "^66.1.0-beta.6",
+    "eslint": "^9.22.0",
+    "eslint-plugin-format": "^1.0.1",
+    "lint-staged": "^15.5.0",
+    "sass": "^1.86.0",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.8.2",
+    "unocss": "^66.1.0-beta.6",
+    "vite-plugin-eslint2": "^5.0.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "bun lint-staged",
+    "commit-msg": "bun commitlint $1"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
