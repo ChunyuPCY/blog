@@ -9,7 +9,10 @@ export default withNuxt(
       vue: true,
       typescript: true,
       unocss: true,
-      formatters: true,
+      formatters: {
+        css: true,
+        svg: true,
+      },
     },
     {
       ignores: [

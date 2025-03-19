@@ -27,6 +27,7 @@
     "@commitlint/config-conventional": "^19.8.0",
     "@commitlint/types": "^19.8.0",
     "@nuxt/eslint": "^1.2.0",
+    "@prettier/plugin-xml": "^3.4.1",
     "@unocss/eslint-plugin": "^66.1.0-beta.6",
     "@unocss/nuxt": "^66.1.0-beta.6",
     "eslint": "^9.22.0",
