@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <button>
-    按扭
+  <button my-2 px-4 py-2 border rounded-xl bg-white>
+    <slot />
   </button>
 </template>
 

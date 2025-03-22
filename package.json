@@ -17,7 +17,8 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "nuxt": "^3.16.0",
+    "@nuxt/content": "^3.4.0",
+    "nuxt": "^3.16.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
@@ -26,6 +27,7 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@commitlint/types": "^19.8.0",
+    "@iconify/json": "^2.2.319",
     "@nuxt/eslint": "^1.2.0",
     "@prettier/plugin-xml": "^3.4.1",
     "@unocss/eslint-plugin": "^66.1.0-beta.6",

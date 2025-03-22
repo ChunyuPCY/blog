@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxt/eslint',
+    '@nuxt/content',
   ],
   vue: {
     propsDestructure: true,
@@ -14,7 +15,6 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Superficiality',
       htmlAttrs: {
         lang: 'en',
       },
@@ -29,5 +29,8 @@ export default defineNuxtConfig({
       standalone: false,
     },
     checker: true,
+  },
+  experimental: {
+    viewTransition: true,
   },
 })
