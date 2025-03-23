@@ -1,7 +1,7 @@
 ---
 title: "My Dog"
 date: 2025-03-21
-draft: false
+published: true
 tags: ["pets", "photo"]
 thumbnail: "#/terminal/wezterm.png"
 ---

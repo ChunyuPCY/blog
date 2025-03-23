@@ -1,7 +1,7 @@
 ---
 title: "Zsh Setup"
 date: 2025-03-21
-draft: false
+published: true
 tags: ["terminal", "shell"]
 thumbnail: "#/terminal/wezterm.png"
 ---

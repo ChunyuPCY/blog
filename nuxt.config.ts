@@ -13,16 +13,6 @@ export default defineNuxtConfig({
   unocss: {
     nuxtLayers: true,
   },
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en',
-      },
-      link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-      ],
-    },
-  },
   eslint: {
     // options
     config: {
@@ -32,5 +22,8 @@ export default defineNuxtConfig({
   },
   experimental: {
     viewTransition: true,
+  },
+  future: {
+    compatibilityVersion: 4,
   },
 })
